@@ -1,181 +1,29 @@
 import React from 'react';
-import { ShieldCheck, Award, Sparkles, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, CheckCircle2 } from 'lucide-react';
 
-export const SealExcellence: React.FC<{ className?: string }> = ({ className = "w-36 h-36" }) => {
+export const SealExcellence: React.FC<{ className?: string }> = ({ className = "w-40 h-40 sm:w-52 sm:h-52" }) => {
   return (
-    <svg viewBox="0 0 400 400" className={className} xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        {/* Gradients */}
-        <linearGradient id="goldOuterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#FFE082" />
-          <stop offset="50%" stopColor="#C5A47E" />
-          <stop offset="100%" stopColor="#8D6E45" />
-        </linearGradient>
-        <radialGradient id="goldCenterGrad" cx="50%" cy="40%" r="60%">
-          <stop offset="0%" stopColor="#FFF9C4" />
-          <stop offset="35%" stopColor="#FFE082" />
-          <stop offset="70%" stopColor="#FFB300" />
-          <stop offset="100%" stopColor="#D4A017" />
-        </radialGradient>
-        <linearGradient id="blueRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#0B3C85" />
-          <stop offset="50%" stopColor="#002159" />
-          <stop offset="100%" stopColor="#0B2B61" />
-        </linearGradient>
-        <filter id="sealShadow" x="-10%" y="-10%" width="130%" height="130%">
-          <feDropShadow dx="0" dy="8" stdDeviation="10" floodColor="#000000" floodOpacity="0.5" />
-        </filter>
-      </defs>
-
-      {/* Main Outer Seal Shadow & Base Circle */}
-      <g filter="url(#sealShadow)">
-        {/* Outer Gold Decorative Teeth / Rim */}
-        <circle cx="200" cy="200" r="192" fill="url(#goldOuterGrad)" />
-        <circle cx="200" cy="200" r="186" fill="#001845" />
-        
-        {/* Blue Ring */}
-        <circle cx="200" cy="200" r="182" fill="url(#blueRingGrad)" />
-        <circle cx="200" cy="200" r="182" stroke="url(#goldOuterGrad)" strokeWidth="3" fill="none" />
-        <circle cx="200" cy="200" r="138" stroke="url(#goldOuterGrad)" strokeWidth="3" fill="none" strokeDasharray="3 3" />
-
-        {/* Inner Gold Circle */}
-        <circle cx="200" cy="200" r="132" fill="url(#goldCenterGrad)" />
-        <circle cx="200" cy="200" r="132" stroke="#B28900" strokeWidth="2" fill="none" />
-        <circle cx="200" cy="200" r="124" stroke="#FFE082" strokeWidth="1.5" fill="none" opacity="0.8" />
-      </g>
-
-      {/* Outer Ring Curved Text */}
-      <path id="topCurve" d="M 50,200 A 150,150 0 1,1 350,200" fill="none" />
-      <path id="bottomCurve" d="M 352,200 A 152,152 0 0,1 48,200" fill="none" />
-
-      {/* Top Stars */}
-      <g fill="#FFE082">
-        <polygon points="200,32 203,40 212,40 205,45 207,53 200,48 193,53 195,45 188,40 197,40" />
-        <polygon points="160,40 162,47 170,47 164,51 166,58 160,54 154,58 156,51 150,47 158,47" />
-        <polygon points="240,40 242,47 250,47 244,51 246,58 240,54 234,58 236,51 230,47 238,47" />
-        <polygon points="122,58 124,65 132,65 126,69 128,76 122,72 116,76 118,69 112,65 120,65" />
-        <polygon points="278,58 280,65 288,65 282,69 284,76 278,72 272,76 274,69 268,65 276,65" />
-      </g>
-
-      {/* Bottom Text in Blue Ring */}
-      <text fill="#FFE082" fontSize="21" fontWeight="900" letterSpacing="1.5">
-        <textPath href="#bottomCurve" startOffset="50%" textAnchor="middle">
-          고용노동부 | 직업능력심사평가원
-        </textPath>
-      </text>
-
-      {/* Center Trophy Icon Graphic */}
-      <g transform="translate(182, 90) scale(1.5)">
-        <path d="M6 9 C6 13 10 16 12 16 C14 16 18 13 18 9 L18 3 L6 3 Z" fill="#002159" />
-        <path d="M6 5 L2 5 C2 8 4 10 6 10 Z" fill="none" stroke="#002159" strokeWidth="1.5" />
-        <path d="M18 5 L22 5 C22 8 20 10 18 10 Z" fill="none" stroke="#002159" strokeWidth="1.5" />
-        <rect x="10.5" y="16" width="3" height="4" fill="#002159" />
-        <rect x="8" y="20" width="8" height="2" fill="#002159" />
-      </g>
-
-      {/* Laurel Wreath Left & Right */}
-      <g fill="#002159" opacity="0.25">
-        <path d="M 110,180 C 100,160 110,130 130,120 C 120,135 120,165 130,180 Z" />
-        <path d="M 290,180 C 300,160 290,130 270,120 C 280,135 280,165 270,180 Z" />
-      </g>
-
-      {/* Center Main Title */}
-      <text x="200" y="195" textAnchor="middle" fill="#002159" fontSize="48" fontWeight="900" letterSpacing="-1">
-        우 수
-      </text>
-      <text x="200" y="250" textAnchor="middle" fill="#002159" fontSize="48" fontWeight="900" letterSpacing="-1">
-        훈련기관
-      </text>
-
-      {/* Certificate Number & Date */}
-      <text x="200" y="285" textAnchor="middle" fill="#002159" fontSize="20" fontWeight="800">
-        2022나-105-03
-      </text>
-      <text x="200" y="308" textAnchor="middle" fill="#002159" fontSize="18" fontWeight="700">
-        (2023.01.~2027.12.)
-      </text>
-    </svg>
+    <div className={`relative rounded-full overflow-hidden bg-white border-2 border-[#c5a47e] shadow-2xl flex items-center justify-center ${className}`}>
+      <img
+        src="https://postfiles.pstatic.net/MjAyNjA3MjhfMjUg/MDAxNzg1MjIwOTY5MDEz.HrA4iyomLC-17UOZZnE6Xzxwvme4Yit3gZyIfvBeqfog.8HwmyZDJDDsKOpmUJkvDhHtzI_7YgKXKhDUV-s6ZkrMg.PNG/ImageToStl.com_%EC%9A%B0%EC%88%98%ED%9B%88%EB%A0%A8%EA%B8%B0%EA%B4%80_23-27_200400659_%ED%95%9C%EA%B5%AD%EC%A0%95%EB%B3%B4%EA%B5%90%EC%9C%A1%EC%9B%90(%EA%B5%AC.%EA%B2%BD%EC%9B%90%EC%A7%81%EC%97%85%EC%A0%84%EB%AC%B8%ED%95%99%EA%B5%90).png?type=w966"
+        alt="고용노동부 우수훈련기관 인증"
+        className="w-full h-full object-cover scale-[1.35] transition-transform duration-300"
+        referrerPolicy="no-referrer"
+      />
+    </div>
   );
 };
 
-export const SealBha: React.FC<{ className?: string }> = ({ className = "w-36 h-36" }) => {
+export const SealBha: React.FC<{ className?: string }> = ({ className = "w-40 h-40 sm:w-52 sm:h-52" }) => {
   return (
-    <svg viewBox="0 0 400 400" className={className} xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="bhaRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#1E5BBA" />
-          <stop offset="50%" stopColor="#0D3B80" />
-          <stop offset="100%" stopColor="#1B4D9B" />
-        </linearGradient>
-        <radialGradient id="bhaCenterGrad" cx="50%" cy="40%" r="60%">
-          <stop offset="0%" stopColor="#FFFFFF" />
-          <stop offset="85%" stopColor="#F4F8FF" />
-          <stop offset="100%" stopColor="#E3EDFC" />
-        </radialGradient>
-        <filter id="bhaShadow" x="-10%" y="-10%" width="130%" height="130%">
-          <feDropShadow dx="0" dy="8" stdDeviation="10" floodColor="#000000" floodOpacity="0.4" />
-        </filter>
-      </defs>
-
-      {/* Main Base Circles */}
-      <g filter="url(#bhaShadow)">
-        <circle cx="200" cy="200" r="192" fill="#5B93E4" />
-        <circle cx="200" cy="200" r="186" fill="#0D3B80" />
-        <circle cx="200" cy="200" r="182" fill="url(#bhaRingGrad)" />
-        <circle cx="200" cy="200" r="182" stroke="#89B5F7" strokeWidth="2.5" fill="none" />
-        <circle cx="200" cy="200" r="138" stroke="#89B5F7" strokeWidth="2.5" fill="none" strokeDasharray="3 3" />
-
-        {/* Inner White Circle */}
-        <circle cx="200" cy="200" r="132" fill="url(#bhaCenterGrad)" />
-        <circle cx="200" cy="200" r="132" stroke="#1E5BBA" strokeWidth="2" fill="none" />
-        <circle cx="200" cy="200" r="124" stroke="#D0E2FF" strokeWidth="1.5" fill="none" />
-      </g>
-
-      {/* Outer Ring Curved Text */}
-      <path id="bhaBottomCurve" d="M 352,200 A 152,152 0 0,1 48,200" fill="none" />
-
-      {/* Top Laurel Wreath Leaves on Ring */}
-      <g fill="#FFFFFF" opacity="0.9">
-        <path d="M 170,45 C 180,40 190,45 200,50 C 190,52 180,50 170,45 Z" />
-        <path d="M 230,45 C 220,40 210,45 200,50 C 210,52 220,50 230,45 Z" />
-        <circle cx="200" cy="38" r="4" fill="#FFFFFF" />
-      </g>
-
-      {/* Bottom Ring Text */}
-      <text fill="#FFFFFF" fontSize="21" fontWeight="900" letterSpacing="1.5">
-        <textPath href="#bhaBottomCurve" startOffset="50%" textAnchor="middle">
-          고용노동부 | 직업능력심사평가원
-        </textPath>
-      </text>
-
-      {/* Center BHA Logo Graphic */}
-      <g transform="translate(100, 100)">
-        {/* Figure Dots */}
-        <circle cx="95" cy="25" r="9" fill="#00A3FF" />
-        <circle cx="125" cy="25" r="9" fill="#00A3FF" />
-
-        {/* BHA Bold Lettering */}
-        <text x="100" y="80" textAnchor="middle" fill="#0B3C85" fontSize="72" fontWeight="900" letterSpacing="-3">
-          BHA
-        </text>
-      </g>
-
-      {/* Subtitle Text */}
-      <text x="200" y="210" textAnchor="middle" fill="#1E5BBA" fontSize="24" fontWeight="800" letterSpacing="0.5">
-        Best
-      </text>
-      <text x="200" y="238" textAnchor="middle" fill="#1E5BBA" fontSize="26" fontWeight="900" letterSpacing="-0.5">
-        HRD Academy
-      </text>
-
-      {/* Cert Number & Date */}
-      <text x="200" y="276" textAnchor="middle" fill="#0D3B80" fontSize="20" fontWeight="800">
-        2022A-002-02
-      </text>
-      <text x="200" y="300" textAnchor="middle" fill="#0D3B80" fontSize="18" fontWeight="700">
-        [2023.01.~2027.12.]
-      </text>
-    </svg>
+    <div className={`relative rounded-full overflow-hidden bg-white border-2 border-blue-500 shadow-2xl flex items-center justify-center ${className}`}>
+      <img
+        src="https://postfiles.pstatic.net/MjAyNjA3MjhfMTIg/MDAxNzg1MjIwOTY5MDE0.Wc-caQQv0G0T54QP1aoXVNMp4k6Ubkbo9-Cqq5BfovAg.lNzztXjJBks5Xot4tFqQ4o6ZSATpKBGQIR5zI0kFpvsg.PNG/ImageToStl.com_200400659_%ED%95%9C%EA%B5%AD%EC%A0%95%EB%B3%B4%EA%B5%90%EC%9C%A1%EC%9B%90_23-27.png?type=w966"
+        alt="BHA 베스트 직업훈련기관 인증"
+        className="w-full h-full object-cover scale-[1.35] transition-transform duration-300"
+        referrerPolicy="no-referrer"
+      />
+    </div>
   );
 };
 
@@ -188,17 +36,14 @@ export const CertificationSealsSection: React.FC = () => {
 
       <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
         
-        {/* Left Side: 2 Prominent Official Certification Seals */}
-        <div className="flex items-center justify-center gap-6 sm:gap-8 shrink-0 w-full lg:w-auto">
+        {/* Left Side: 2 Large High-Visibility Official Certification Seals */}
+        <div className="flex items-center justify-center gap-4 sm:gap-8 shrink-0 w-full lg:w-auto">
           {/* SEAL 1 CARD */}
           <div className="flex flex-col items-center group">
-            <div className="relative p-3 sm:p-4 rounded-3xl bg-[#0a0b0d]/80 border border-[#c5a47e]/30 shadow-2xl group-hover:border-[#c5a47e]/60 transition-all group-hover:scale-105 duration-300">
-              <SealExcellence className="w-32 h-32 sm:w-40 sm:h-40 drop-shadow-xl" />
-              <div className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-[#c5a47e] text-[#0a0b0d] text-[11px] font-black tracking-tight whitespace-nowrap shadow-md">
-                5년 인증 최고등급
-              </div>
+            <div className="relative">
+              <SealExcellence className="w-36 h-36 sm:w-48 sm:h-48 group-hover:scale-105 transition-transform duration-300" />
             </div>
-            <p className="mt-4 text-xs sm:text-sm font-extrabold text-white text-center">
+            <p className="mt-3.5 px-3.5 py-1 rounded-full border border-[#c5a47e] text-[#f7e7ce] text-xs sm:text-sm font-black text-center">
               고용노동부 우수훈련기관
             </p>
             <p className="text-[11px] text-gray-400 font-medium text-center">
@@ -208,13 +53,10 @@ export const CertificationSealsSection: React.FC = () => {
 
           {/* SEAL 2 CARD */}
           <div className="flex flex-col items-center group">
-            <div className="relative p-3 sm:p-4 rounded-3xl bg-[#0a0b0d]/80 border border-blue-400/30 shadow-2xl group-hover:border-blue-400/60 transition-all group-hover:scale-105 duration-300">
-              <SealBha className="w-32 h-32 sm:w-40 sm:h-40 drop-shadow-xl" />
-              <div className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-blue-500 text-white text-[11px] font-black tracking-tight whitespace-nowrap shadow-md">
-                BHA 베스트 아카데미
-              </div>
+            <div className="relative">
+              <SealBha className="w-36 h-36 sm:w-48 sm:h-48 group-hover:scale-105 transition-transform duration-300" />
             </div>
-            <p className="mt-4 text-xs sm:text-sm font-extrabold text-white text-center">
+            <p className="mt-3.5 px-3.5 py-1 rounded-full border border-blue-400 text-blue-200 text-xs sm:text-sm font-black text-center">
               BHA 베스트 직업훈련기관
             </p>
             <p className="text-[11px] text-gray-400 font-medium text-center">
@@ -265,3 +107,4 @@ export const CertificationSealsSection: React.FC = () => {
     </div>
   );
 };
+

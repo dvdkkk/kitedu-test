@@ -26,7 +26,10 @@ export const StickyBottomBar: React.FC<StickyBottomBarProps> = ({
           </div>
 
           <span className="hidden sm:inline-block text-gray-300 font-semibold">
-            자부담금 <strong className="text-[#c5a47e]">국취제 연계시 매월 최대 80만원씩 지원</strong>
+            <strong className="inline-flex items-center gap-1.5 text-[#f7e7ce] font-extrabold bg-gradient-to-r from-[#ffe8c6] via-[#c5a47e] to-[#ffe8c6] bg-clip-text text-transparent animate-pulse drop-shadow-[0_0_10px_rgba(197,164,126,0.8)]">
+              <Sparkles className="w-3.5 h-3.5 text-yellow-400 animate-bounce shrink-0" />
+              국취제 연계시 매월 최대 80만원씩 지원
+            </strong>
           </span>
         </div>
 
