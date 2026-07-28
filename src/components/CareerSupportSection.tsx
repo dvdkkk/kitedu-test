@@ -108,18 +108,18 @@ export const CareerSupportSection: React.FC = () => {
 
                       <ul className="space-y-2.5 mb-4">
                         {step.items.map((item, itemIdx) => (
-                          <li key={itemIdx} className="flex items-start gap-2 text-xs text-gray-300">
+                          <li key={itemIdx} className="flex items-start gap-2 text-sm text-gray-200 font-medium">
                             <Check className="w-3.5 h-3.5 text-[#c5a47e] mt-0.5 shrink-0" />
-                            <span className="leading-tight">{item}</span>
+                            <span className="leading-snug">{item}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
                     {/* Bottom Status Bar */}
-                    <div className="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-gray-400">
-                      <span className="text-gray-400 font-medium flex items-center gap-1">
-                        <Award className="w-3 h-3 text-[#c5a47e]" /> 전담 컨설턴트
+                    <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs sm:text-sm text-gray-400">
+                      <span className="text-gray-300 font-medium flex items-center gap-1.5">
+                        <Award className="w-3.5 h-3.5 text-[#c5a47e]" /> 전담 컨설턴트
                       </span>
                       <span className="text-[#c5a47e] font-bold">100% 보장</span>
                     </div>
