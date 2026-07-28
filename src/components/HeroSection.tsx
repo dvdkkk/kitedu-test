@@ -48,8 +48,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenApplication, onO
         <ScrollReveal direction="up" distance={25} delay={0.1}>
           {/* Top Badges */}
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 mb-6">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-semibold">
-              <MapPin className="w-3.5 h-3.5 text-[#c5a47e]" />
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#c5a47e]/10 border border-[#c5a47e]/30 text-[#f7e7ce] text-xs font-semibold">
+              <TrendingUp className="w-3.5 h-3.5 text-[#c5a47e]" />
               <span>{COURSE_SUMMARY.campus}</span>
             </div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">

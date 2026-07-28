@@ -90,7 +90,7 @@ export const TrustMetricsSection: React.FC = () => {
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
               한정교는 <span className="text-gradient-gold">결과</span>로 증명합니다
             </h2>
-            <p className="mt-3 text-sm sm:text-base text-gray-400 font-medium leading-relaxed">
+            <p className="mt-3 text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
               고용노동부 공식 평가 취업률부터 수강생 만족도까지 한눈에 확인하세요.
             </p>
           </div>

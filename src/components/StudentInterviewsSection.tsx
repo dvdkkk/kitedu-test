@@ -84,7 +84,7 @@ export const StudentInterviewsSection: React.FC = () => {
             <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
               수강생 인터뷰 - 수강생이 먼저 경험한 취업 스토리
             </h2>
-            <p className="mt-3 text-sm text-gray-400">
+            <p className="mt-3 text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
               실제 과정을 수료하고 취업에 성공한 수강생들의 생생한 후기입니다.
             </p>
           </div>

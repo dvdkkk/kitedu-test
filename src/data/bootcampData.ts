@@ -13,7 +13,7 @@ import {
 
 export const COURSE_SUMMARY: CourseSummary = {
   badge: "2025 KDT 취업률 85%",
-  campus: "100% 오프라인과정",
+  campus: "2025 KDT 취업률 85%",
   title: "생성형AI × Java\n풀스택 개발 부트캠프",
   courseTitle: "현업에서 바로 통하는 자바 풀스택 & 생성형AI 서비스개발 실무 프로젝트 완성",
   capacity: "25명",

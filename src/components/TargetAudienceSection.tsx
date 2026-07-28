@@ -49,7 +49,7 @@ export const TargetAudienceSection: React.FC = () => {
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
               이런 분들에게 <span className="text-gradient-gold">강력 추천</span>합니다
             </h2>
-            <p className="mt-3 text-sm sm:text-base text-gray-300 font-medium leading-relaxed">
+            <p className="mt-3 text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
               비전공자부터 실무 포트폴리오를 완성하고 싶은 분까지,<br className="hidden sm:inline" />
               생성형 AI × Java 풀스택 과정으로 확실한 IT 취업 로드맵을 선사합니다.
             </p>

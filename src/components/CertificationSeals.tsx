@@ -44,7 +44,7 @@ export const CertificationSealsSection: React.FC = () => {
               <SealExcellence className="w-36 h-36 sm:w-48 sm:h-48 group-hover:scale-105 transition-transform duration-300" />
             </div>
             <p className="mt-3.5 px-3.5 py-1 rounded-full border border-[#c5a47e] text-[#f7e7ce] text-xs sm:text-sm font-black text-center">
-              고용노동부 우수훈련기관
+              우수훈련기관 선정
             </p>
             <p className="text-[11px] text-gray-400 font-medium text-center">
               2023.01 ~ 2027.12 (5년)
@@ -57,7 +57,7 @@ export const CertificationSealsSection: React.FC = () => {
               <SealBha className="w-36 h-36 sm:w-48 sm:h-48 group-hover:scale-105 transition-transform duration-300" />
             </div>
             <p className="mt-3.5 px-3.5 py-1 rounded-full border border-blue-400 text-blue-200 text-xs sm:text-sm font-black text-center">
-              BHA 베스트 직업훈련기관
+              베스트직업훈련기관 선정
             </p>
             <p className="text-[11px] text-gray-400 font-medium text-center">
               2023.01 ~ 2027.12 (5년)

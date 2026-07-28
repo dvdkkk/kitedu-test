@@ -25,7 +25,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenApplication }) => 
             <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
               자주 묻는 질문
             </h2>
-            <p className="mt-3 text-sm text-gray-400">
+            <p className="mt-3 text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
               수강 신청 전 가장 궁금해하시는 질문과 답변을 정리했습니다.
             </p>
           </div>

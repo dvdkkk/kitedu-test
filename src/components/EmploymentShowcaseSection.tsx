@@ -22,7 +22,7 @@ export const EmploymentShowcaseSection: React.FC = () => {
             <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
               수료 후, 이런 곳으로 취업합니다
             </h2>
-            <p className="mt-3 text-sm text-gray-400">
+            <p className="mt-3 text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
               한국정보교육원 수료생들이 입사하여 활약 중인 <br />실제 협력 기업 및 취업처 현황입니다.
             </p>
           </div>

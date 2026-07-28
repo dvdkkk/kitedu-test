@@ -32,7 +32,7 @@ export const KeyPointsSection: React.FC = () => {
               자바 풀스택 개발자<br />
               <span className="text-gradient-gold"> 핵심 POINT</span>
             </h2>
-            <p className="mt-4 text-sm sm:text-base text-gray-300 leading-relaxed">
+            <p className="mt-4 text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
               AI 시대의 개발자 취업 어떻게 준비해야 할까요? <br />국내 대기업·공공·금융 시스템의 절대다수 Java 기반 위에 생산성을 극대화하는 AI 활용 능력을 갖추어야 합니다.
             </p>
           </div>

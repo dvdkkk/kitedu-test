@@ -68,10 +68,10 @@ export const MarketInsightSection: React.FC = () => {
               MARKET INSIGHT
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
-              코딩, AI가 점점 더 잘하는 시대…<br className="hidden sm:inline" />
+              코딩, AI가 점점 더 잘하는 시대…<br />
               <span className="text-gradient-gold"> AI를 지휘하는 개발자가 생존합니다.</span>
             </h2>
-            <p className="mt-4 text-sm text-gray-400 max-w-2xl mx-auto">
+            <p className="mt-4 text-base sm:text-lg text-gray-300 font-medium leading-relaxed max-w-2xl mx-auto">
               단순 구문 암기형 코더의 시대는 끝났습니다. 생성형 AI 어시스턴트를 효과적으로 활용해 비즈니스 문제를 해결하는 AI-Native 개발자가 채용 시장을 독식하고 있습니다.
             </p>
           </div>

@@ -44,7 +44,7 @@ export const CurriculumSection: React.FC = () => {
             <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
               커리큘럼 - 전문가로 성장하는 <br />실무완성 커리큘럼
             </h2>
-            <p className="mt-3 text-sm text-gray-400">
+            <p className="mt-3 text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
               기초 문법부터 Spring Boot, Docker, GCP 클라우드 배포, AI LLM API 이식, 그리고 3차 실무 프로젝트까지 체계적 완성.
             </p>
           </div>

@@ -54,7 +54,7 @@ export const CareerSupportSection: React.FC = () => {
               취업지원 - 수료 후까지 이어지는 <br />
               <span className="text-gradient-gold">밀착 취업지원 시스템</span>
             </h2>
-            <p className="mt-3 text-sm text-gray-400">
+            <p className="mt-3 text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
               수강 전부터 수료 후까지 전담 IT 취업 컨설턴트가 1:1로 밀착 서포트합니다.
             </p>
           </div>
