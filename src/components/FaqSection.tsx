@@ -15,7 +15,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenApplication }) => 
   };
 
   return (
-    <section id="faq" className="py-16 md:py-24 bg-[#0a0b0d] relative border-t border-[#c5a47e]/15">
+    <section id="faq" className="py-16 md:py-24 bg-[#0a0b0d] relative border-t border-[#c5a47e]/15 overflow-hidden w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal direction="up" distance={30}>
           <div className="text-center max-w-3xl mx-auto mb-12">
@@ -26,7 +26,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenApplication }) => 
               자주 묻는 질문
             </h2>
             <p className="mt-3 text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
-              수강 신청 전 가장 궁금해하시는 질문과 답변을 정리했습니다.
+              수강 신청 전 가장 궁금해하시는<br />질문과 답변을 정리했습니다.
             </p>
           </div>
         </ScrollReveal>

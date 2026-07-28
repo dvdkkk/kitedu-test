@@ -33,9 +33,9 @@ export const TargetAudienceSection: React.FC = () => {
   };
 
   return (
-    <section id="audience" className="py-16 sm:py-24 bg-[#0a0b0d] relative border-t border-[#c5a47e]/15 overflow-hidden">
+    <section id="audience" className="py-16 sm:py-24 bg-[#0a0b0d] relative border-t border-[#c5a47e]/15 overflow-hidden w-full max-w-full">
       {/* Background Decorative Lighting */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[#c5a47e]/5 rounded-full blur-[140px] pointer-events-none"></div>
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[90vw] max-w-[700px] h-[400px] bg-[#c5a47e]/5 rounded-full blur-[140px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

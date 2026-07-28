@@ -63,7 +63,7 @@ export const FastInquirySection: React.FC<FastInquirySectionProps> = () => {
   };
 
   return (
-    <section id="fast-inquiry" className="bg-[#ffcc00] text-black py-16 md:py-24 relative overflow-hidden">
+    <section id="fast-inquiry" className="bg-[#ffcc00] text-black py-16 md:py-24 relative overflow-hidden w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal direction="up" distance={30}>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">

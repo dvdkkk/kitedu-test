@@ -74,9 +74,9 @@ const AnimatedCounter: React.FC<AnimatedCounterProps> = ({ value, duration = 150
 
 export const TrustMetricsSection: React.FC = () => {
   return (
-    <section id="metrics" className="py-16 sm:py-20 relative bg-[#0a0b0d] border-b border-[#c5a47e]/15">
+    <section id="metrics" className="py-16 sm:py-20 relative bg-[#0a0b0d] border-b border-[#c5a47e]/15 overflow-hidden w-full max-w-full">
       {/* Background Decorative Lighting */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#c5a47e]/5 rounded-full blur-[140px] pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-[800px] h-[500px] bg-[#c5a47e]/5 rounded-full blur-[140px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

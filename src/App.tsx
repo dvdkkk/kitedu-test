@@ -38,7 +38,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0b0d] text-gray-100 flex flex-col font-sans selection:bg-[#c5a47e] selection:text-black">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-[#0a0b0d] text-gray-100 flex flex-col font-sans selection:bg-[#c5a47e] selection:text-black relative">
       {/* Top Navbar */}
       <Navbar
         onOpenApplication={handleOpenApplication}
@@ -46,7 +46,7 @@ export default function App() {
       />
 
       {/* Main Page Sections */}
-      <main className="flex-1 pb-20 sm:pb-24">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden pb-20 sm:pb-24">
         {/* SECTION 1: Hero Header & Main Info Card */}
         <HeroSection
           onOpenApplication={handleOpenApplication}

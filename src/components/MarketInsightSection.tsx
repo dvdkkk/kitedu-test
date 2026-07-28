@@ -57,9 +57,9 @@ export const MarketInsightSection: React.FC = () => {
   }, [isInView]);
 
   return (
-    <section id="insight" ref={sectionRef} className="py-16 md:py-24 bg-[#0a0b0d] relative border-b border-[#c5a47e]/15 overflow-hidden">
+    <section id="insight" ref={sectionRef} className="py-16 md:py-24 bg-[#0a0b0d] relative border-b border-[#c5a47e]/15 overflow-hidden w-full max-w-full">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#c5a47e]/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-[500px] h-[500px] bg-[#c5a47e]/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollReveal direction="up" distance={30}>

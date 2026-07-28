@@ -73,7 +73,7 @@ export const StudentInterviewsSection: React.FC = () => {
     : [0, 3, 6];
 
   return (
-    <section id="interviews" className="py-16 md:py-24 bg-[#0d0e12] relative border-t border-white/10">
+    <section id="interviews" className="py-16 md:py-24 bg-[#0d0e12] relative border-t border-white/10 overflow-hidden w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <ScrollReveal direction="up" distance={30}>
@@ -82,10 +82,10 @@ export const StudentInterviewsSection: React.FC = () => {
               REAL STUDENT REVIEWS
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
-              수강생 인터뷰 - 수강생이 먼저 경험한 취업 스토리
+              수강생 인터뷰<br /> 수강생이 먼저 경험한 취업 스토리
             </h2>
             <p className="mt-3 text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
-              실제 과정을 수료하고 취업에 성공한 수강생들의 생생한 후기입니다.
+              실제 과정을 수료하고 취업에 성공한 <br />수강생들의 생생한 후기입니다.
             </p>
           </div>
         </ScrollReveal>

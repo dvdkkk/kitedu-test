@@ -1,11 +1,29 @@
 @import "tailwindcss";
 
 @layer base {
+  html {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
   body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
     background-color: #0a0b0d;
     color: #f3f4f6;
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100vw;
     overflow-x: hidden;
+    position: relative;
   }
 }
 

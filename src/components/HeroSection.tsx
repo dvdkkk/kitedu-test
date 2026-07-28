@@ -24,7 +24,7 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenApplication, onOpenCalculator }) => {
   return (
-    <section id="hero" className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
+    <section id="hero" className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden w-full max-w-full">
       {/* AI Chip Tech Background Image & Edge Blending */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img
@@ -41,8 +41,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenApplication, onO
       </div>
 
       {/* Glow Background Elements */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[#c5a47e]/10 rounded-full blur-[140px] pointer-events-none"></div>
-      <div className="absolute top-1/3 right-10 w-[400px] h-[300px] bg-[#8c6d48]/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-[600px] h-[350px] bg-[#c5a47e]/10 rounded-full blur-[140px] pointer-events-none"></div>
+      <div className="absolute top-1/3 right-0 w-[80vw] max-w-[400px] h-[300px] bg-[#8c6d48]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollReveal direction="up" distance={25} delay={0.1}>

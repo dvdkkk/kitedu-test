@@ -12,7 +12,7 @@ export const EmploymentShowcaseSection: React.FC = () => {
   const marqueeRow2 = [...row2, ...row2, ...row2];
 
   return (
-    <section id="employment" className="py-16 md:py-24 bg-[#0a0b0d] relative border-t border-[#c5a47e]/15 overflow-hidden">
+    <section id="employment" className="py-16 md:py-24 bg-[#0a0b0d] relative border-t border-[#c5a47e]/15 overflow-hidden w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
         <ScrollReveal direction="up" distance={30}>
           <div className="text-center max-w-3xl mx-auto">

@@ -9,30 +9,8 @@ export const FooterSection: React.FC = () => {
   const [modalType, setModalType] = useState<'terms' | 'privacy' | null>(null);
 
   return (
-    <footer className="bg-[#07080b] border-t border-[#c5a47e]/15 pt-12 pb-24 text-gray-400 text-xs relative">
+    <footer className="bg-[#07080b] border-t border-[#c5a47e]/15 pt-12 pb-24 text-gray-400 text-xs relative overflow-hidden w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Top: Policy Buttons & Copyright side-by-side */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 pb-4 border-b border-white/10 text-gray-400">
-          <div className="flex items-center gap-4">
-            <button
-              onClick={() => setModalType('terms')}
-              className="hover:text-white transition-colors underline font-medium"
-            >
-              이용약관
-            </button>
-            <span className="text-gray-700">|</span>
-            <button
-              onClick={() => setModalType('privacy')}
-              className="hover:text-white transition-colors underline font-bold text-gray-300"
-            >
-              개인정보취급방침
-            </button>
-          </div>
-
-          <p className="text-gray-500 text-xs text-center sm:text-right">{COMPANY_INFO.copyright}</p>
-        </div>
-
         {/* Company Info Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
           {/* Logo & Intro */}
@@ -86,6 +64,26 @@ export const FooterSection: React.FC = () => {
           </div>
         </div>
 
+        {/* Bottom: Policy Buttons & Copyright side-by-side */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-white/10 text-gray-400">
+          <div className="flex items-center gap-4">
+            <button
+              onClick={() => setModalType('terms')}
+              className="hover:text-white transition-colors underline font-medium"
+            >
+              이용약관
+            </button>
+            <span className="text-gray-700">|</span>
+            <button
+              onClick={() => setModalType('privacy')}
+              className="hover:text-white transition-colors underline font-bold text-gray-300"
+            >
+              개인정보취급방침
+            </button>
+          </div>
+
+          <p className="text-gray-500 text-xs text-center sm:text-right">{COMPANY_INFO.copyright}</p>
+        </div>
       </div>
 
       {/* Policy Modals */}
