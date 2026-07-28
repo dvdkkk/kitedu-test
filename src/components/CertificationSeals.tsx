@@ -57,7 +57,7 @@ export const CertificationSealsSection: React.FC = () => {
               <SealBha className="w-36 h-36 sm:w-48 sm:h-48 group-hover:scale-105 transition-transform duration-300" />
             </div>
             <p className="mt-3.5 px-3.5 py-1 rounded-full border border-blue-400 text-blue-200 text-xs sm:text-sm font-black text-center">
-              베스트직업훈련기관 선정
+              베스트직업훈련기관
             </p>
             <p className="text-[11px] text-gray-400 font-medium text-center">
               2023.01 ~ 2027.12 (5년)
@@ -79,7 +79,7 @@ export const CertificationSealsSection: React.FC = () => {
 
           <p className="text-xs sm:text-sm text-gray-300 leading-relaxed font-medium">
             한국정보교육원은 고용노동부 및 직업능력심사평가원이 엄격한 심사를 통해 선정한 <strong className="text-white font-bold">5년 인증 우수훈련기관</strong>이자 <strong className="text-white font-bold">BHA(Best HRD Academy) 베스트 직업훈련기관</strong>입니다.<br className="hidden sm:block" />
-            수준 높은 교수진과 실무 위주 AI × Java 커리큘럼, 압도적인 취업률로 여러분의 IT 개발자 커리어 시작을 함께합니다.
+            수준 높은 교수진과 실무 위주 AI × Java 커리큘럼, 압도적인 취업률로 여러분의 개발자 커리어 준비를 함께합니다.
           </p>
 
           {/* Key Advantages Grid */}

@@ -142,7 +142,7 @@ export const TargetAudienceSection: React.FC = () => {
                   <span>국비지원 95%~100% 혜택 대상 확인</span>
                 </div>
                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white leading-tight">
-                  "나도 지원 가능할까?" 고민되시나요?<br />
+                  고민되시나요?<br />
                   <span className="text-gradient-gold">1분만에 수강 자격 및 지원금 계산</span>해보세요!
                 </h3>
                 <p className="text-xs sm:text-sm text-gray-300 font-medium leading-relaxed">

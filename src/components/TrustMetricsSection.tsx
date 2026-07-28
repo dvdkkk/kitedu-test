@@ -128,7 +128,7 @@ export const TrustMetricsSection: React.FC = () => {
                   </div>
 
                   <p className="mt-2 text-xs sm:text-sm text-gray-300 font-medium text-center lg:text-left leading-relaxed">
-                    K-Digital Training 수료생 10명 중 <strong className="text-[#c5a47e] font-black">8.5명 취업 성공!</strong><br />
+                    KDT 수료생 10명 중 <strong className="text-[#c5a47e] font-black">8.5명 취업 성공!</strong><br />
                     전국 평균을 넘어서는 공식 인증 취업률입니다.
                   </p>
 

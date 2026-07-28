@@ -144,7 +144,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenApplication, onO
                   <span className="text-sm text-gray-400 line-through">{COURSE_SUMMARY.originalPrice}</span>
                   <span className="text-2xl font-black text-[#c5a47e]">{COURSE_SUMMARY.discountedPrice}</span>
                   <span className="text-xs font-bold text-emerald-400 bg-emerald-500/20 px-2 py-0.5 rounded-full">
-                    95% 이상 지원
+                    95% 이상 국비지원
                   </span>
                 </div>
               </div>
