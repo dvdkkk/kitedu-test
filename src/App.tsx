@@ -46,7 +46,7 @@ export default function App() {
       />
 
       {/* Main Page Sections */}
-      <main className="flex-1">
+      <main className="flex-1 pb-20 sm:pb-24">
         {/* SECTION 1: Hero Header & Main Info Card */}
         <HeroSection
           onOpenApplication={handleOpenApplication}

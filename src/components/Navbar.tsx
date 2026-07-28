@@ -48,11 +48,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApplication, onOpenCalcula
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo & Brand Identity */}
-        <a href="#hero" className="flex items-center gap-3 group py-1 transition-all">
-          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#161822] border border-[#c5a47e]/35 p-1 flex items-center justify-center shadow-md group-hover:border-[#c5a47e] group-hover:scale-105 transition-all">
+        <a href="#hero" className="flex items-center gap-2.5 sm:gap-3 group py-1 transition-all">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-[#161822] border border-[#c5a47e]/35 p-1 flex items-center justify-center shadow-md group-hover:border-[#c5a47e] group-hover:scale-105 transition-all shrink-0">
             <KLogoIcon className="w-full h-full rounded-lg" />
           </div>
-          <span className="font-black text-lg sm:text-xl tracking-tight text-white group-hover:text-[#c5a47e] transition-colors leading-none">
+          <span className="font-black text-base sm:text-xl tracking-tight text-white group-hover:text-[#c5a47e] transition-colors leading-none whitespace-nowrap">
             한국정보교육원
           </span>
         </a>
@@ -71,7 +71,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApplication, onOpenCalcula
           ))}
         </nav>
 
-        {/* Action Buttons */}
+        {/* Desktop Action Buttons */}
         <div className="hidden sm:flex items-center gap-3">
           <a
             href="tel:1800-5027"
@@ -92,14 +92,33 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApplication, onOpenCalcula
           </button>
         </div>
 
-        {/* Mobile Hamburger Button */}
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 rounded-xl bg-[#151720] border border-[#c5a47e]/20 text-gray-300 hover:text-white"
-          aria-label="Toggle Navigation Menu"
-        >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        {/* Mobile Action Controls (Education Inquiry + '목록' Menu Toggle) */}
+        <div className="flex items-center gap-2 lg:hidden">
+          <button
+            onClick={onOpenApplication}
+            className="px-3 py-1.5 rounded-xl bg-yellow-400 hover:bg-yellow-300 text-black font-extrabold text-xs flex items-center gap-1 shadow-md shadow-yellow-500/30 active:scale-95 transition-all whitespace-nowrap"
+          >
+            <span>교육문의</span>
+          </button>
+
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="px-2.5 py-1.5 rounded-xl bg-[#161822] border border-[#c5a47e]/40 text-[#f7e7ce] hover:text-white hover:border-[#c5a47e] flex items-center gap-1.5 shadow-md active:scale-95 transition-all"
+            aria-label="Toggle Navigation Menu"
+          >
+            {mobileMenuOpen ? (
+              <>
+                <X className="w-4 h-4 text-yellow-400" />
+                <span className="text-xs font-black text-white">닫기</span>
+              </>
+            ) : (
+              <>
+                <Menu className="w-4 h-4 text-[#c5a47e]" />
+                <span className="text-xs font-black text-white">목록</span>
+              </>
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Drawer Menu */}
